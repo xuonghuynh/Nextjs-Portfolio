@@ -1,3 +1,4 @@
+import ContactSection from "@/components/contact-section/contact-section";
 import Header from "@/components/header/header";
 import { ModeToggle } from "@/components/theme-toggle";
 
@@ -7,6 +8,7 @@ export default function Home() {
             <div className="max-w-screen-xl mx-auto px-4 w-full">
               <div className="absolute top-4 right-10"><ModeToggle /></div>
               <Header />
+              <ContactSection />
             </div>
         </div>
     );

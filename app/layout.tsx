@@ -20,9 +20,7 @@ export default function RootLayout({
             <body className={nunito.className}>
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
+                    defaultTheme="dark"
                 >
                     {children}
                 </ThemeProvider>

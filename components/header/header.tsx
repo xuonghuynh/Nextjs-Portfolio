@@ -8,7 +8,7 @@ import { IoIosSchool } from "react-icons/io";
 const Header = () => {
     return (
         <div className="mt-20">
-            <div className="flex items-center gap-x-7 flex-col md:flex-row">
+            <div className="flex items-center gap-x-7 flex-col md:flex-row pb-7">
                 <Avatar className="w-[200px] h-[200px] md:w-[150px] md:h-[150px]">
                     <AvatarImage src="/avatar-1.png" />
                     <AvatarFallback>HLX</AvatarFallback>
