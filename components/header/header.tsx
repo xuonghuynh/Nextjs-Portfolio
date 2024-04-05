@@ -10,8 +10,8 @@ const Header = () => {
         <div className="mt-20">
             <div className="flex items-center gap-x-7 flex-col md:flex-row">
                 <Avatar className="w-[200px] h-[200px] md:w-[150px] md:h-[150px]">
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarImage src="/avatar-1.png" />
+                    <AvatarFallback>HLX</AvatarFallback>
                 </Avatar>
                 <div className="flex-1">
                     <h1 className="font-bold text-5xl dark:text-white text-violet-700">
