@@ -2,7 +2,7 @@ import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { BsTerminalFill } from "react-icons/bs";
-import SubInfo from "@/components/sub-info";
+import SubInfo from "@/app/(Home)/_components/SubInfo";
 import { IoIosSchool } from "react-icons/io";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
