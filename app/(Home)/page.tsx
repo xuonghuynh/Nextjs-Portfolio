@@ -8,13 +8,14 @@ import WorkHistory from "@/app/(Home)/_components/WorkHistorySection";
 export default function Home() {
     return (
         <div>
+            <div className="absolute top-4 right-10"><ModeToggle /></div>
+            <Header />
+            <ContactSection />
+            <AboutSection />
+            <SkillSection />
+            <WorkHistory />
             <div className="max-w-screen-xl mx-auto px-4 w-full">
-              <div className="absolute top-4 right-10"><ModeToggle /></div>
-              <Header />
-              <ContactSection />
-              <AboutSection />
-              <SkillSection />
-              <WorkHistory />
+              
             </div>
         </div>
     );

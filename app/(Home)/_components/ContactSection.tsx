@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 const ContactSection = () => {
     const { contact } = data;
     return (
-        <div className="border-t border-zinc-100 py-7 dark:border-zinc-800">
+        <div className="max-w-screen-xl mx-auto px-4 w-full border-t border-zinc-100 py-7 dark:border-zinc-800">
             <h3 className="capitalize text-base md:text-lg text-violet-700 dark:text-zinc-400 font-bold mb-3">Contact</h3>
             <div className="flex flex-wrap gap-5 items-center">
                 {contact.map((item) => {

@@ -10,11 +10,11 @@ import { data } from "@/data/data";
 import Title from "@/app/(Home)/_components/Title";
 
 const WorkHistory = () => {
+    
     const { experients } = data;
-    console.log(experients)
 
     return (
-        <div className="border-t border-zinc-100 py-7 dark:border-zinc-800">
+        <div className="max-w-screen-xl mx-auto px-4 w-full border-t border-zinc-100 py-7 dark:border-zinc-800">
             <Title title="Work History" />
             <VerticalTimeline lineColor="">
                 {experients.map((item, index) => (
