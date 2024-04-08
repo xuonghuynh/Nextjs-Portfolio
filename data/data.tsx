@@ -49,4 +49,21 @@ export const data = {
         { id: 36, name: "Shopify", image: "/skills/shopify.png" },
         { id: 37, name: "Wordpress", image: "/skills/wordpress.png" },
     ],
+
+    experients: [
+        {
+            id: 1,
+            title: "Frontend Developer",
+            company: "FPT Software",
+            time: "2022 - Present",
+            description: "abc xyz",
+        },
+        {
+            id: 2,
+            title: "Frontend Developer",
+            company: "FPT Software",
+            time: "2021 - 2022",
+            description: "abc xyz",
+        }
+    ]
 };

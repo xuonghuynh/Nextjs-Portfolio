@@ -3,6 +3,7 @@ import ContactSection from "@/app/(Home)/_components/ContactSection";
 import { ModeToggle } from "@/app/(Home)/_components/ThemeToggle";
 import Header from "@/app/(Home)/_components/Header";
 import SkillSection from "@/app/(Home)/_components/SkillSection";
+import WorkHistory from "@/app/(Home)/_components/WorkHistorySection";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
               <ContactSection />
               <AboutSection />
               <SkillSection />
+              <WorkHistory />
             </div>
         </div>
     );
