@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
@@ -27,17 +27,21 @@ const slideVariant = {
 }
 
 const WorkHistory = () => {
-    const [isHide, setIsHide] = useState(true);
     const { theme } = useTheme();
     const { experients } = data;
 
-    setTimeout(() => setIsHide(false));
+    const [isMouted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMouted) return null;
 
     return (
         <div className="max-w-screen-xl mx-auto px-4 w-full border-t border-zinc-100 py-7 dark:border-zinc-800">
             <Title title="Work History" />
-            {!isHide && (
-                <motion.div
+            <motion.div
                 variants={slideVariant}
                 initial="initial"
                 whileInView={"animate"}
@@ -64,7 +68,6 @@ const WorkHistory = () => {
                     ))}
                 </VerticalTimeline>
             </motion.div>
-            )}
         </div>
     );
 };
