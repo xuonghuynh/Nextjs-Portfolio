@@ -13,7 +13,7 @@ const Header = () => {
     <div className="relative h-[700px] py-20 lg:h-[60dvh]">
       <Particle />
       <div className="grid-reverse mx-auto grid h-full w-full max-w-screen-xl grid-rows-1 items-center px-4 lg:grid-cols-2">
-        <div className="order-2 lg:order-1">
+        <div className="order-2 lg:order-1 z-50">
           <div className="text-center font-bold text-violet-700 dark:text-white xl:text-left">
             <h1 className="text-[26px] font-bold uppercase md:text-[3rem]">
               HI, I&apos;M{" "}
@@ -38,10 +38,10 @@ const Header = () => {
                 textTransform: "uppercase",
               }}
               repeat={Infinity}
-              className="text-[26px] font-bold text-[#55e6e5] md:text-[3rem]"
+              className="text-[26px] font-bold text-[#55e6e5] md:text-[3rem] z-50"
             />
           </div>
-          <div className="mt-3 flex flex-col flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex-row md:items-start xl:justify-start">
+          <div className="mt-3 flex flex-col flex-wrap items-center justify-center gap-x-4 gap-y-2 md:flex-row md:items-start xl:justify-start z-50">
             <SubInfo icon={FaMapMarkerAlt} label="Ho Chi Minh, Vietnam" />
             <SubInfo icon={BsTerminalFill} label="5 Years of experience" />
             <SubInfo icon={IoIosSchool} label="BSc FPT Greenwich" />

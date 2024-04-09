@@ -14,9 +14,6 @@ export default function Home() {
             <AboutSection />
             <SkillSection />
             <WorkHistory />
-            <div className="max-w-screen-xl mx-auto px-4 w-full">
-              
-            </div>
         </div>
     );
 }

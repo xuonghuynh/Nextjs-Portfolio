@@ -3,8 +3,10 @@ import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import { useTheme } from "next-themes";
 
 const Particle = () => {
+    const { theme } = useTheme();
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
 
@@ -63,10 +65,10 @@ const Particle = () => {
                     },
                     particles: {
                         color: {
-                            value: "#ffffff",
+                            value: theme === "dark" ? "#ffffff" : "#000000",
                         },
                         links: {
-                            color: "#ffffff",
+                            color: theme === "dark" ? "#ffffff" : "#000000",
                             distance: 120,
                             enable: true,
                             opacity: 0.5,

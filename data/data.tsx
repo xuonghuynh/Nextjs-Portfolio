@@ -1,4 +1,6 @@
 import { FaFacebookSquare, FaGithub, FaRegUserCircle } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import { CgWorkAlt } from "react-icons/cg";
 import { MdEmail } from "react-icons/md";
 
 export const data = {
@@ -57,6 +59,7 @@ export const data = {
             company: "FPT Software",
             time: "2022 - Present",
             description: "abc xyz",
+            icon: <LuGraduationCap />
         },
         {
             id: 2,
@@ -64,6 +67,31 @@ export const data = {
             company: "FPT Software",
             time: "2021 - 2022",
             description: "abc xyz",
+            icon: <CgWorkAlt />
+        },
+        {
+            id: 2,
+            title: "Frontend Developer",
+            company: "FPT Software",
+            time: "2021 - 2022",
+            description: "abc xyz",
+            icon: <CgWorkAlt />
+        },
+        {
+            id: 2,
+            title: "Frontend Developer",
+            company: "FPT Software",
+            time: "2021 - 2022",
+            description: "abc xyz",
+            icon: <CgWorkAlt />
+        },
+        {
+            id: 2,
+            title: "Frontend Developer",
+            company: "FPT Software",
+            time: "2021 - 2022",
+            description: "abc xyz",
+            icon: <CgWorkAlt />
         }
     ]
 };
