@@ -66,10 +66,6 @@
   }
 }
 
-html {
-  --line-color: #FFF;
-}
-
 @layer base {
   * {
     @apply border-border;
