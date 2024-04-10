@@ -6,6 +6,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import {motion} from "framer-motion"
+import parse from 'html-react-parser';
+import { isMobile } from 'react-device-detect';
 
 import { data } from "@/data/data";
 import Title from "@/app/(Home)/_components/Title";
@@ -14,7 +16,7 @@ import { useTheme } from "next-themes";
 const slideVariant = {
     initial: {
         opacity: 0,
-        x: -500
+        x: isMobile ? -350 : -500
     },
     animate: {
         opacity: 1,
@@ -62,7 +64,7 @@ const WorkHistory = () => {
                                 <h3 className="text-zinc-700 dark:text-white capitalize text-sm md:text-base font-bold">
                                     {item.title}
                                 </h3>
-                                <div className="text-base md:text-lg font-semibold text-black dark:text-zinc-400">{item.description}</div>
+                                <div className="text-base md:text-lg font-semibold text-black dark:text-zinc-400">{parse(item.description)}</div>
                             </VerticalTimelineElement>
                         </React.Fragment>
                     ))}
